@@ -1,54 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated landing page website Design using HTML & CSS</title>
-    <link rel="stylesheet" type="text/css" href="watch.css"
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAY1BMVEUAAAD////8/PwEBATCwsLX19c4ODj4+PiNjY1NTU0UFBQtLS3Ly8u5ubmqqqoyMjLp6emZmZlubm6xsbEMDAx6enpDQ0Pe3t4nJyegoKBSUlKTk5Nzc3NeXl5jY2MfHx+Dg4N7F4toAAAIFklEQVR4nO2ca5eqOgyGewHrBRBHEFFH+f+/8iThYqFlxu3MGutZefaHLXXAvKaXtE0VgmEYhmEYhmEYhmEYhmEYhmEYhmEYhmEYxocGpiVUOC13S8KjKLzFXrNn/jYcCn3buBzFenOcFB03t+DFiM8kcjiLi1sYNetXW/sNhVhV0iESZ7ewugbfZoQojTRGkb3wv1JSyVQsjZQKLzqUMbtX2/ot0EPd9hI1DPRioNB+Iz6+2tZvwf72mtu16S7G2MWmFMF3zTR4rMryUiKXyyUaxCiVtKXEVYQvxiHrxCjqB94Z+Or3/xsx4v8k5s09Q/FjAf/6Ao+YmdAzPFo7+47K7xlQS39QhC6mjx2Hb31GTPvir637RwpxiPM8rz7pasYzYlvlVZ5cX2jnQ2ixguFR5qu+wCtG4N+Y5auMfJwSg5XsRq/n2ozIMM7ZhV7NRLHDcOw8zLt8XbMWFwzZOsUBs85QTNNezHrmEyI1mW5eZeSjgBg1iBFzngEx8g3EQDVTU88on5h38IxeWtVMoBhgPxXzgdPO8NuMuKKYXbtWob1ioM002DWHP2/GcQbM3vaXPs8IEaGY5hXm/QtaLGIwOz90V17PCJHDZRclBIwWxRnbQ9MHxV4xJ0NdXOjgGILrGemaIv2ZalZLo/LmhWY+Big47nFZ7NCubXjF3HLomOPFK+18CFRwwUp0RrfMeGapDIaZwYdmKGaTgZq8c81UDJQdYmlkdHyTpaZDDF990k6+JmJQQGZUq/XVdj7GNVdG7YTHM1BSYr9cwqT5LdRoWjzH7grMHYvBxdsKWtTSt8cWJjCZuUhj8osYewZqnljF1Du8jxgERxsDc8msE2MoeIY6BuHBx6uN+2eOMQwmyekuBvqELQxBJsb1gbdxCgHWniuIOfO7Zwy0fJNnx3dp+3c0TAK2dUx7Mm2bwVlaVZ9wl/ntxFBNOpzTKjdmL87QH8QRShFvsTLrQhafyqYuxbU+l6dX2/MzOhcUa72mtafgV5e/YlhDL9qo8806sRH3vYuumbxhU2EYhmEYhmGYL9DfxLjajunvU0c9G+Zr3wzA9xlUNv/hT0TeXdQ+PPf+Qk9i++FquE0M4b59q7Yk91OdIY3G/Wh3aq2fTrr/9iZLrXh0Sc8yvVPsm3vqLw14Towotot5tkUnZkOX6+5Djl/csrgJSwxuFyz8xwHgkUdXDF6DRc/M7+DWRRrPE60EZY2t6wovV933uavmb6muVn3XoKOuVt4WkFVx6u4SoLo0rp7KudfiME6Ex3UvK/n9hKcsQExKl/3Ky95OZ55S2mIo/3nvNS3BdemD0JNOCF6CRU/NvMEzdzFd5rilBr9UfG4rRvUpWZQ50yXI402jzOyLLUYUuHK79X10hA/B/I1xS4SXsZTPaJm0zaWURpl69GR6fxDjfGNbTP+XiW2u3ZuJz0oaWU/v6sTAnfV6LEY/L2bSPZ3xi5aZ9X63xjrxjHXPAh06EjN6ZFGjD40v5aQVI3eF+CXPTHp02ty3xXQ7446Y/i6NYkaewaxa64mnCiohWOwXo/CgB22v/YaYCTtqCpn7xkSMxYLaSeJtFaLNfQBvG8+IEqEWPK5ysUeml4tRPjFkOm45oxrZCCcKiKSpDPomv4pfaTMTflMMUiyliqAHUDJ299ATmS8j7ApVbuXXhCvmVsm83BnMbmicjjCS+fUUY7+uYmvrIEgx2EY+oDUdVzF2kUkhJvUswm1PGFKxTdHg2d0XphisSZjWvKcc6MvUNSRGNNSmVLodgtm/E+MMmvPVTIuTpDNnB8wIcg9vtGJEQwfwMOTpZheBegaaPmUK4SEulZc+MRCA1HTors/4DrOaFeAYWW3R3CseEjTZJNxsxcDbaTsWdSnfQYqhUXHZBgsxHhKkuYG23+7zHmIKcVXZBxwBijnBANJFkSUFcBhuesQUGLhj4I19xJ+KebwDwFvqPvirUAwmbXjFiE/yjYTBM1DPfObSbPo1hAbFqKW/moGaj5xmUdUhwDaD9u9pGtN5Zk1Ha+PVnJh1QwkrKqHJYFBi0H6clFmzmJqOdTf+DkDg4QJMiFImuYm/E/Nwm6mhcLE49Fxx4FSJfchhJEbojPpnlR5Dq2YFOYYmKx3wEodG+wCaLQaXvFJF87gsNDHwJEUzLwtaLYnXd9+OxODSWkWDJ7S0wMScYJiE4R0G+A592+O6j7ne09CiabLgLSbB5hKYmMY4h4CumFhH2ajFjBiISMk3mI33AxE9v9UBLBJ0jJ1RgyunaKlciFkxup3d0I9Y/IkYB6+YElywGEViOHDihF+mYraaaZrd4L9gqhkulbeTsomYbULz/WF52RWDJ1loiSMUMbgX86lwEXliqMakRzyDNisGtd+y9tdRfizld9oMfL0RTsomdoICXL1QFH8RXjFim8qA2gwYDePJxDFtQ8moRfSrm64Y8tkCT6oFIoaWMe51aWTnoZ0JdCGbrwPApcITbkv8VIlAMdj4vqxmYxu1s3CuxUGqeOPbxcQfQcHoudsT8HimewAMNM9rGHB2AdrH02YTRk5Om4FZIkZdo645Qsf4NiWhAtIP73R10C+GJqb5c5tNYz73iKcmF02K7yzcDuCY4Rvn+68Y3ZIExxiPGNwSTICoDTezOPUce6RNhEv6898R086L9sra/3eagvuMYnyL/ZzRTd4vf9hN/7Fr9OT/+wd4Xk4MHBX4N77HN89Ya+cXMAzDMAzDMAzDMAzDMAzDMAzDMAzDMAzDMAzDMAzDMH/Hf8ZLYN9A5Vi1AAAAAElFTkSuQmCC" width="200">
-
-            </div>
-            <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">Features</a>
-                <a href="#">Booking</a>
-                <a href="#">Login</a>
-
-            </div>
-        </nav>
-        <div class="'line">
-            <div class="box1"></div><br>
-            <div class="box2"></div><br>
-            <div class="box3"></div>
-
-        </div>
-
-        <div class="container">
-            <div class="left animate__animated animate__bounce">
-                <h1>Future<br> On Your Hand</h1>
-                <button>Order Now</button>
-            </div>
-            <div class="right">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcUa0Epdw_RsVhajIDyCL-aCucTaYVFIaM4Q&usqp=CAU">
-            </div>
-        </div>
-        <div class="s-icon">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgd9AZjl_34OvfpoJNJb9nMjgHL7S0rUE3XQ&usqp=CAU">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBgk04oTuyMhBVhxDz671AQceOvMfO0sMDWQ&usqp=CAU">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3r_5WxKWDIXXaFa8oaqDrg8TjRM5rl9TbC3pgPxkwfulB6Lo5t7tBsIRvIZnfMUd2XVM&usqp=CAU">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvIqxPKss_WM__jvRoJUfzp_0GEFsvvCTInA&usqp=CAU">
-            
-        </div>
-    </header>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator in HTML CSS & JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" class="display" />
+      <div class="buttons">
+        <button class="operator" data-value="AC">AC</button>
+        <button class="operator" data-value="DEL">DEL</button>
+        <button class="operator" data-value="%">%</button>
+        <button class="operator" data-value="/">/</button>
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button class="operator" data-value="*">*</button>
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button class="operator" data-value="-">-</button>
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button class="operator" data-value="+">+</button>
+        <button data-value="0">0</button>
+        <button data-value="00">00</button>
+        <button data-value=".">.</button>
+        <button class="operator" data-value="=">=</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
